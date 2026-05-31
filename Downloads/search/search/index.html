@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin: 10px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        header a {
+            text-decoration: none;
+            color: black;
+        }
+
+        header a:hover {
+            color: blue;
+        }
+        body{
+            height: 100%;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 200px;
+
+        }
+
+        #search {
+            width: 500px;
+            height: 30px;
+            font-size: 16px;
+            padding: 5px;
+            border-radius: 30px;
+            background-color: aliceblue;
+            border: none;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .buttons {
+            display: inline-block;
+        }
+
+        .buttons input,
+        .buttons button {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
+
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="imagesearch.html">Image Search</a>
+        <a href="advancedsearch.html">Advanced Search</a>
+    </header>
+    <div class="main">
+        <img src="Google-logo.png" alt="logo">
+        <form action="https://google.com/search">
+            <input id="search" placeholder="Search" type="text" name="q">
+
+            <div class="buttons">
+                <input type="submit"  value="Google Search">
+                <button type="submit" name="btnI" value="1">
+    I’m Feeling Lucky
+</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
